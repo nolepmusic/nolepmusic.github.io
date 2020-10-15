@@ -1,0 +1,71 @@
+.discover{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 100px;
+}
+.cover{
+    width: 30vw;
+    height: auto;
+    margin-left: 2rem;
+    max-width: 350px;
+}
+.fitur , .icon{
+    display: flex;
+}
+.judul{font-size: 3.1rem;}
+.icon{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: .5rem;
+    padding: .75rem;
+    margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: #202020;
+}
+
+@media screen and (max-width:1220px){
+    .discover{
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        padding: 0;
+    }
+    .fitur , .tulisan{
+        justify-content: center;
+        text-align: center;
+    }
+    .cover{
+        width: 40vw;
+        height: 40vh;
+        padding: 10px 0;
+    }
+    .heigh-grow{
+        margin: 0;
+    }
+}
+@media screen and (max-width:500px){
+    .fitur , .tulisan{
+        justify-content: flex-start;
+    }
+    .discover{
+        padding: 0 0;
+        margin: 0;
+    }
+    .cover{
+        width: 60vw;
+        height: 40vh;
+    }
+    .heigh-grow{
+        padding: 0 10px;
+    }
+    .logo{
+        padding-left: 20px;
+    }
+    .navigasi{
+        padding-right: 1px;
+    }
+}

@@ -1,0 +1,47 @@
+.bungkus-gambar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+    flex-grow: 1;
+}
+.foto{
+    background: url("../img/cewe.png");
+    min-width: 30vw;
+    max-height: 70vh;
+    flex-grow: 1;
+    background-size: contain;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+.tulisan{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    align-self: center;
+    margin: 1rem;
+}
+.subtitle{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.btn{
+    padding: .75rem 1.5rem;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    background-color: #3121e9;
+}
+@media screen and (max-width:900px){
+    .bungkus-gambar{
+        display: none;
+    }
+    .tulisan , .judul, .btn, .subtitle{
+        margin: auto;
+        text-align: center;
+    }
+    .btn{
+        margin-top: 10px;
+    }
+}

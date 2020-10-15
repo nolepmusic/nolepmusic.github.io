@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*::before , *::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #2F303A;
+    font-size: 1.2rem;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+.main-section{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.kepala , .foot{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.kepala{
+    height: 70px;
+}
+a{text-decoration: none;color: white;}
+.logo{
+    display: flex;
+    align-items: center;
+    color: inherit;
+}
+.nama-brand{
+    margin-left: .4rem;
+}
+.navigasi{
+    display: flex;
+    justify-items: center;
+    list-style: none;
+}
+.navigasi a , .logo{outline: none;}
+.navigasi a{
+    padding: 20px;
+    transition: color .4s;
+}.navigasi a:hover{color: #ff5d1d;}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    flex-grow: 1;
+    padding: 0 40px;
+}
+.heigh-grow{
+    display: flex;
+    flex-direction: column;
+}
+.judul{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 3em;
+}
+[class^=bola]{
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+}
+.bola1{
+    width: 20vw;
+    height: 20vw;
+    left: 5%;
+    bottom: 0;
+    background-color: rgba(255, 30, 124, .10);
+}
+.bola2{
+    width: 20vw;
+    height: 20vw;
+    left: 50%;
+    top: 5%;
+    background-color: rgba(46, 92, 255, .10);
+}
+.bola3{
+    width: 25vw;
+    height: 25vw;
+    bottom: 0;
+    right: 0;
+    transform: translate(30%,50%);
+    background-color: rgba(185, 35, 255, .10);
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    background-color: #202020af;
+    padding: 0 190px;
+    box-sizing: border-box;
+    padding: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.info ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.a{padding: 0 40px 0 0;margin: 0;}
+.brow{transition: color .4s;}
+.sosmed{
+    display: flex;
+    align-items: center;
+    transition: color .4s;
+}
+.sosmed img{
+    margin-right: .5rem;
+}
+#tw:hover{
+    color: #00acee;
+}
+#fb:hover{
+    color: #4267B2;
+}
+.brow:hover{
+    color: #919191;
+}
